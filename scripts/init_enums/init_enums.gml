@@ -34,4 +34,9 @@ enum objectState
 	slammed_during,
 	slamming_start,
 	slamming_during,
+	
+	piledrived_start,
+	piledrived_during,
+	piledriving_start,
+	piledriving_during
 }

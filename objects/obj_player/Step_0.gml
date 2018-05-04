@@ -39,6 +39,12 @@ if (my_state == objectState.idle ||
 					grabbed_id.my_state = objectState.slammed_start;
 					alarm[0] = 30;
 				}
+				
+				else if (_v_input == -1)
+				{
+					my_state = objectState.piledriving_start;
+					grabbed_id.my_state = objectState.piledrived_start;
+				}
 			
 				else
 				{

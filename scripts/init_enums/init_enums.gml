@@ -28,5 +28,10 @@ enum objectState
 	kicked_start,
 	kicked_during,
 	kicking_start,
-	kicking_during
+	kicking_during,
+	
+	slammed_start,
+	slammed_during,
+	slamming_start,
+	slamming_during,
 }

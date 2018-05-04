@@ -1,9 +1,9 @@
+var _h_input = obj_IM.button_held[action.right] - obj_IM.button_held[action.left];
+var _v_input = obj_IM.button_held[action.down] - obj_IM.button_held[action.up];
+
 if (my_state == objectState.idle ||
 	my_state == objectState.grabbing_during)
 {
-	var _h_input = obj_IM.button_held[action.right] - obj_IM.button_held[action.left];
-	var _v_input = obj_IM.button_held[action.down] - obj_IM.button_held[action.up];
-
 	if (_h_input != 0)
 		facing = _h_input;
 		
@@ -28,13 +28,26 @@ if (my_state == objectState.idle ||
 					grabbed_id.grabber_id = id;
 					grabbed_id.x_speed = 0;
 					grabbed_id.y_speed = 0;
-					grabbed_id.grav = 0;
 				}
 				break;
 		
 			case objectState.grabbing_during:
-				my_state = objectState.kicking_start;
-				grabbed_id.my_state = objectState.kicked_start;
+			
+				if (_v_input == 1)
+				{
+					my_state = objectState.slamming_start;
+					grabbed_id.my_state = objectState.slammed_start;
+					alarm[0] = 30;
+				}
+			
+				else
+				{
+					my_state = objectState.kicking_start;
+					grabbed_id.my_state = objectState.kicked_start;
+				}
+				break;
+				
+			case objectState.slamming_start:
 				break;
 		}
 	}

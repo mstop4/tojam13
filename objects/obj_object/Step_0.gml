@@ -78,7 +78,7 @@ switch (my_state)
 		break;
 	
 	case objectState.grabbed_during:
-	
+	case objectState.slammed_start:
 		x = grabber_id.x;
 		y = grabber_id.y-32;
 		break;
@@ -96,7 +96,7 @@ switch (my_state)
 				my_state = objectState.idle;
 				grabber_id.my_state = objectState.idle;
 				x_speed = 6*grabber_id.facing;
-				y_speed = -6;
+				y_speed = -4;
 				grabber_id.grabbed_id = noone;
 				grabber_id = noone;
 			}

@@ -58,6 +58,25 @@
             }
         },
         {
+            "Key": "08a085e9-e025-4974-896e-1eb5c6daee51",
+            "Value": {
+                "id": "6c5477ac-66dc-4df7-940a-f38cb54e4665",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_wall\/obj_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b70240d-d3ad-48af-927b-543a9a9895b3",
             "Value": {
                 "id": "f567d531-2518-429f-979c-352a26b5b739",
@@ -245,6 +264,25 @@
                 ],
                 "resourcePath": "options\/ios\/options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "8b91f0bd-196d-4457-b27d-8b7d30478129",
+            "Value": {
+                "id": "52eddede-3a72-442a-9526-528e4317be35",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_wall\/spr_wall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

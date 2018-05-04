@@ -1,5 +1,4 @@
-x_speed = 0;
-y_speed = 0;
+event_inherited();
 
-grav = 0;
-in_air = false;
+closest_obj = noone;
+grabbed_id = noone;

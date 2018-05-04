@@ -1,41 +1,41 @@
-var _h_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var _v_input = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-
-if (_h_input != 0)
+if (my_state == objectState.idle ||
+	my_state == objectState.grabbing_during)
 {
-	x += my_speed * _h_input;
-}
+	var _h_input = obj_IM.button_held[action.right] - obj_IM.button_held[action.left];
+	var _v_input = obj_IM.button_held[action.down] - obj_IM.button_held[action.up];
 
-if (!in_air && keyboard_check_pressed(ord("J")))
-{
-	y--;
-	y_speed = my_jump_speed;
-}
-
-if (in_air)
-{
-	if (place_meeting(x,y+1,obj_wall))
+	if (_h_input != 0)
 	{
-		grav = 0;
-		y_speed = 0;
-		in_air = false;
+		x += my_speed * _h_input;
+	}
+
+	if (!in_air && obj_IM.button_pressed[action.jump])
+	{
+		y--;
+		y_speed = my_jump_speed;
+	}
+
+	if (obj_IM.button_pressed[action.interact])
+	{
+		if (my_state == objectState.idle)
+		{
+			if (closest_obj != noone)
+			{
+				my_state = objectState.grabbing_during;
+				grabbed_id = closest_obj;
+				grabbed_id.my_state = objectState.grabbed_start;
+				grabbed_id.grabber_id = id;
+			}
+		}
 		
-		y = y div 32 * 32;
-		
-	}
-	
-	else
-	{
-		y_speed += grav;
-		y += y_speed;
-	}
-}
-
-else
-{
-	if (!place_meeting(x,y+1,obj_wall))
-	{
-		grav = my_grav;
-		in_air = true;
+		else if (my_state == objectState.grabbing_during)
+		{
+			my_state = objectState.idle;
+			grabbed_id.my_state = objectState.idle;
+			grabbed_id.grabber_id = noone;
+			grabbed_id = noone;
+			
+		}
 	}
 }
+event_inherited();

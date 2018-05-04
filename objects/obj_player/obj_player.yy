@@ -33,11 +33,21 @@
             "enumb": 73,
             "eventtype": 8,
             "m_owner": "4fc04e5e-f702-46ce-b2f0-e82bff48c778"
+        },
+        {
+            "id": "c899c483-f81d-4461-8ac6-2b4d99dab55d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "4fc04e5e-f702-46ce-b2f0-e82bff48c778"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "a569a8f7-e24d-4956-bdc7-511c9e7016be",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -52,20 +62,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "8d209c2c-07be-4573-997c-73663ecc12f8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.1",
-            "varName": "my_grav",
-            "varType": 0
-        },
         {
             "id": "4b774b2f-d5fa-40e2-bbad-2da3b0042de8",
             "modelName": "GMObjectProperty",
@@ -92,6 +88,20 @@
             "resourceFilter": 1023,
             "value": "-4",
             "varName": "my_jump_speed",
+            "varType": 0
+        },
+        {
+            "id": "f097c534-a7da-4f59-93e7-13fd62b1dfe0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "8",
+            "varName": "max_grab_dist",
             "varType": 0
         }
     ],

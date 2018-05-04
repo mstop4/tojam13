@@ -4,11 +4,7 @@ closest_obj = noone;
 with (obj_object)
 {
 	if (id != other.id && 
-		my_state != objectState.grabbed_start && 
-		my_state != objectState.grabbed_during &&
-		my_state != objectState.kicked_start && 
-		my_state != objectState.kicked_during &&
-		my_state != objectState.slammed_start)
+		my_state == objectState.idle)
 	{
 		var _dist = distance_to_object(other);
 		if (_dist <= other.max_grab_dist && _dist < _closest_dist)

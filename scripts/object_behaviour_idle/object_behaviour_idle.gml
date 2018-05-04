@@ -26,10 +26,16 @@ if (in_air)
 				break;
 		}
 				
-		grav = 0;
-		x_speed = 0;
-		y_speed = 0;
-		in_air = false;
+		if (!ignore_ground_check)
+		{
+			grav = 0;
+			x_speed = 0;
+			y_speed = 0;
+			in_air = false;
+		}
+		
+		else
+			ignore_ground_check = false;
 	}
 	
 	else

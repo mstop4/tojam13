@@ -5,9 +5,14 @@ if (grabber_id != noone)
 	if (_dist < lift_speed)
 	{
 		x = grabber_id.x+(grabber_id.facing*32);
-		y = grabber_id.y-1;
+		y = grabber_id.y;
+		in_air = true;
 		my_state = objectState.piledrived_during;
 		grabber_id.my_state = objectState.piledriving_during;
+		grabber_id.y_speed = -10;
+		grabber_id.x_speed = 0;
+		grabber_id.in_air = true;
+		grabber_id.grav = grabber_id.my_grav;
 	}
 		
 	else

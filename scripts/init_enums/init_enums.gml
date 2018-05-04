@@ -13,12 +13,17 @@ enum action
 	right,
 	interact,
 	jump,
+	dance,
+	taunt,
 	max_actions
 }
 
 enum objectState
 {
 	idle,
+	pose,
+	dance,
+	taunt,
 	
 	grabbed_start,
 	grabbed_during,

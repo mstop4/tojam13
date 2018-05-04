@@ -7,6 +7,8 @@ kbm_key[action.left] = ord("A");
 kbm_key[action.right] = ord("D");
 kbm_key[action.jump] = ord("K");
 kbm_key[action.interact] = ord("L");
+kbm_key[action.dance] = ord("J");
+kbm_key[action.taunt] = ord("I");
 
 kbm_device[action.up] = device.keyboard;
 kbm_device[action.down] = device.keyboard;
@@ -14,9 +16,13 @@ kbm_device[action.left] = device.keyboard;
 kbm_device[action.right] = device.keyboard;
 kbm_device[action.jump] = device.keyboard;
 kbm_device[action.interact] = device.keyboard;
+kbm_device[action.dance] = device.keyboard;
+kbm_device[action.taunt] = device.keyboard;
 
 gp_key[action.interact] = gp_face3;
 gp_key[action.jump] = gp_face1;
+gp_key[action.dance] = gp_face2;
+gp_key[action.taunt] = gp_face4;
 
 for (var i=0; i<action.max_actions; i++)
 {

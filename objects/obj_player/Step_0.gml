@@ -57,5 +57,20 @@ if (my_state == objectState.idle ||
 				break;
 		}
 	}
+	
+	else if (obj_IM.button_pressed[action.dance])
+	{
+		my_state = objectState.dance;
+		alarm[1] = 120;
+		
+		if (_v_input == 1)
+			type = 1;
+		else if (_v_input == -1)
+			type = 2;
+		else if (_h_input != 0)
+			type = 3;
+		else 
+			type = 0;
+	}
 }
 event_inherited();

@@ -103,6 +103,20 @@
             "value": "8",
             "varName": "max_grab_dist",
             "varType": 0
+        },
+        {
+            "id": "ea4d566d-c3a9-42b5-b3dc-7b6101d9646a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "facing",
+            "varType": 1
         }
     ],
     "solid": false,

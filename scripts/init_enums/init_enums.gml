@@ -19,8 +19,14 @@ enum action
 enum objectState
 {
 	idle,
+	
 	grabbed_start,
 	grabbed_during,
 	grabbing_start,
-	grabbing_during
+	grabbing_during,
+	
+	kicked_start,
+	kicked_during,
+	kicking_start,
+	kicking_during
 }

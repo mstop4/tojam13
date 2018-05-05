@@ -147,6 +147,20 @@
             "value": "1",
             "varName": "facing",
             "varType": 1
+        },
+        {
+            "id": "81885ef3-8bc6-4ec7-bde7-1faf676c7a6b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "my_player_number",
+            "varType": 1
         }
     ],
     "solid": false,

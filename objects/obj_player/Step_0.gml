@@ -1,5 +1,5 @@
-var _h_input = obj_IM.button_held[action.right] - obj_IM.button_held[action.left];
-var _v_input = obj_IM.button_held[action.down] - obj_IM.button_held[action.up];
+var _h_input = obj_IM.button_held[my_player_number,action.right] - obj_IM.button_held[my_player_number,action.left];
+var _v_input = obj_IM.button_held[my_player_number,action.down] - obj_IM.button_held[my_player_number,action.up];
 
 if (my_state == objectState.idle ||
 	my_state == objectState.grabbing_during)
@@ -9,13 +9,13 @@ if (my_state == objectState.idle ||
 		
 	x_speed = my_speed * _h_input;
 
-	if (!in_air && obj_IM.button_pressed[action.jump])
+	if (!in_air && obj_IM.button_pressed[my_player_number,action.jump])
 	{
 		y--;
 		y_speed = my_jump_speed;
 	}
 
-	if (obj_IM.button_pressed[action.interact])
+	if (obj_IM.button_pressed[my_player_number,action.interact])
 	{
 		switch (my_state)
 		{
@@ -58,7 +58,7 @@ if (my_state == objectState.idle ||
 		}
 	}
 	
-	else if (obj_IM.button_pressed[action.dance])
+	else if (obj_IM.button_pressed[my_player_number,action.dance])
 	{
 		my_state = objectState.dance;
 		alarm[1] = 120;

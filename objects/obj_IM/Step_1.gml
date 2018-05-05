@@ -1,114 +1,117 @@
 // keyboard/mouse
 
-if (control_slot == -1)
+for (var j=0; j<2; j++)
 {
-	for (var i=0; i<action.max_actions; i++)
+	if (control_slot[j] == -1)
 	{
-		switch (kbm_device[i])
+		for (var i=0; i<action.max_actions; i++)
 		{
-			case device.keyboard:
+			switch (kbm_device[j,i])
+			{
+				case device.keyboard:
 			
-				button_pressed[i] = keyboard_check_pressed(kbm_key[i]);
-				button_held[i] = keyboard_check(kbm_key[i]);
-				button_released[i] = keyboard_check_released(kbm_key[i]);
-				break;
+					button_pressed[j,i] = keyboard_check_pressed(kbm_key[j,i]);
+					button_held[j,i] = keyboard_check(kbm_key[j,i]);
+					button_released[j,i] = keyboard_check_released(kbm_key[j,i]);
+					break;
 				
-			case device.mouse:
+				case device.mouse:
 				
-				button_pressed[i] = device_mouse_check_button_pressed(mouse_device_id,kbm_key[i]);
-				button_held[i] = device_mouse_check_button(mouse_device_id,kbm_key[i]);
-				button_released[i] = device_mouse_check_button_released(mouse_device_id,kbm_key[i]);
-				break;
+					button_pressed[j,i] = device_mouse_check_button_pressed(mouse_device_id,kbm_key[j,i]);
+					button_held[j,i] = device_mouse_check_button(mouse_device_id,kbm_key[j,i]);
+					button_released[j,i] = device_mouse_check_button_released(mouse_device_id,kbm_key[j,i]);
+					break;
 				
-			default:
+				default:
 			
-				button_pressed[i] = false;
-				button_held[i] = false;
-				button_released[i] = false;				
+					button_pressed[j,i] = false;
+					button_held[j,i] = false;
+					button_released[j,i] = false;				
+			}
 		}
 	}
-}
 
-// gamepad
+	// gamepad
 
-else
-{
-	// stick
-	var _h_input = gamepad_axis_value(control_slot,gp_axislh);
-	var _v_input = gamepad_axis_value(control_slot,gp_axislv);
-	var _old_button_state;
-	
-	//up
-	button_pressed[action.up] = false;
-	button_released[action.up] = false;
-	
-	_old_button_state = button_held[action.up];
-	button_held[action.up] = _v_input <= -stick_threshold;
-	
-	if (!_old_button_state && button_held[action.up])
-		button_pressed[action.up] = true;
-	else if (_old_button_state && !button_held[action.up])
-		button_released[action.up] = true;
-		
-	//down
-	button_pressed[action.down] = false;
-	button_released[action.down] = false;
-	
-	_old_button_state = button_held[action.down];
-	button_held[action.down] = _v_input >= stick_threshold;
-	
-	if (!_old_button_state && button_held[action.down])
-		button_pressed[action.down] = true;
-	else if (_old_button_state && !button_held[action.down])
-		button_released[action.down] = true;
-		
-	//left
-	button_pressed[action.left] = false;
-	button_released[action.left] = false;
-	
-	_old_button_state = button_held[action.left];
-	button_held[action.left] = _h_input <= -stick_threshold;
-	
-	if (!_old_button_state && button_held[action.left])
-		button_pressed[action.left] = true;
-	else if (_old_button_state && !button_held[action.left])
-		button_released[action.left] = true;
-		
-	//right
-	button_pressed[action.right] = false;
-	button_released[action.right] = false;
-	
-	_old_button_state = button_held[action.right];
-	button_held[action.right] = _h_input >= stick_threshold;
-	
-	if (!_old_button_state && button_held[action.right])
-		button_pressed[action.right] = true;
-	else if (_old_button_state && !button_held[action.right])
-		button_released[action.right] = true;
-		
-	
-	// d-pad
-	button_pressed[action.up] |= gamepad_button_check_pressed(control_slot,gp_padu);
-	button_held[action.up] |= gamepad_button_check(control_slot,gp_padu);
-	button_released[action.up] |= gamepad_button_check_released(control_slot,gp_padu);
-	
-	button_pressed[action.down] |= gamepad_button_check_pressed(control_slot,gp_padd);
-	button_held[action.down] |= gamepad_button_check(control_slot,gp_padd);
-	button_released[action.down] |= gamepad_button_check_released(control_slot,gp_padd);
-	
-	button_pressed[action.left] |= gamepad_button_check_pressed(control_slot,gp_padl);
-	button_held[action.left] |= gamepad_button_check(control_slot,gp_padl);
-	button_released[action.left] |= gamepad_button_check_released(control_slot,gp_padl);
-	
-	button_pressed[action.right] |= gamepad_button_check_pressed(control_slot,gp_padr);
-	button_held[action.right] |= gamepad_button_check(control_slot,gp_padr);
-	button_released[action.right] |= gamepad_button_check_released(control_slot,gp_padr);
-	
-	// buttons
-	for (var i=action.interact; i<action.max_actions; i++)
+	else
 	{
-		button_pressed[i] = gamepad_button_check_pressed(control_slot,gp_key[i]);
-		button_held[i] = gamepad_button_check(control_slot,gp_key[i]);
-		button_released[i] = gamepad_button_check_released(control_slot,gp_key[i]);
+		// stick
+		var _h_input = gamepad_axis_value(control_slot[j],gp_axislh);
+		var _v_input = gamepad_axis_value(control_slot[j],gp_axislv);
+		var _old_button_state;
+	
+		//up
+		button_pressed[j,action.up] = false;
+		button_released[j,action.up] = false;
+	
+		_old_button_state = button_held[j,action.up];
+		button_held[j,action.up] = _v_input <= -stick_threshold;
+	
+		if (!_old_button_state && button_held[j,action.up])
+			button_pressed[j,action.up] = true;
+		else if (_old_button_state && !button_held[j,action.up])
+			button_released[j,action.up] = true;
+		
+		//down
+		button_pressed[j,action.down] = false;
+		button_released[j,action.down] = false;
+	
+		_old_button_state = button_held[j,action.down];
+		button_held[j,action.down] = _v_input >= stick_threshold;
+	
+		if (!_old_button_state && button_held[j,action.down])
+			button_pressed[j,action.down] = true;
+		else if (_old_button_state && !button_held[j,action.down])
+			button_released[j,action.down] = true;
+		
+		//left
+		button_pressed[j,action.left] = false;
+		button_released[j,action.left] = false;
+	
+		_old_button_state = button_held[j,action.left];
+		button_held[j,action.left] = _h_input <= -stick_threshold;
+	
+		if (!_old_button_state && button_held[j,action.left])
+			button_pressed[j,action.left] = true;
+		else if (_old_button_state && !button_held[j,action.left])
+			button_released[j,action.left] = true;
+		
+		//right
+		button_pressed[j,action.right] = false;
+		button_released[j,action.right] = false;
+	
+		_old_button_state = button_held[j,action.right];
+		button_held[j,action.right] = _h_input >= stick_threshold;
+	
+		if (!_old_button_state && button_held[j,action.right])
+			button_pressed[j,action.right] = true;
+		else if (_old_button_state && !button_held[j,action.right])
+			button_released[j,action.right] = true;
+		
+	
+		// d-pad
+		button_pressed[j,action.up] |= gamepad_button_check_pressed(control_slot[j],gp_padu);
+		button_held[j,action.up] |= gamepad_button_check(control_slot[j],gp_padu);
+		button_released[j,action.up] |= gamepad_button_check_released(control_slot[j],gp_padu);
+	
+		button_pressed[j,action.down] |= gamepad_button_check_pressed(control_slot[j],gp_padd);
+		button_held[j,action.down] |= gamepad_button_check(control_slot[j],gp_padd);
+		button_released[j,action.down] |= gamepad_button_check_released(control_slot[j],gp_padd);
+	
+		button_pressed[j,action.left] |= gamepad_button_check_pressed(control_slot[j],gp_padl);
+		button_held[j,action.left] |= gamepad_button_check(control_slot[j],gp_padl);
+		button_released[j,action.left] |= gamepad_button_check_released(control_slot[j],gp_padl);
+	
+		button_pressed[j,action.right] |= gamepad_button_check_pressed(control_slot[j],gp_padr);
+		button_held[j,action.right] |= gamepad_button_check(control_slot[j],gp_padr);
+		button_released[j,action.right] |= gamepad_button_check_released(control_slot[j],gp_padr);
+	
+		// buttons
+		for (var i=action.interact; i<action.max_actions; i++)
+		{
+			button_pressed[j,i] = gamepad_button_check_pressed(control_slot[j],gp_key[j,i]);
+			button_held[j,i] = gamepad_button_check(control_slot[j],gp_key[j,i]);
+			button_released[j,i] = gamepad_button_check_released(control_slot[j],gp_key[j,i]);
+		}
 	}
 }

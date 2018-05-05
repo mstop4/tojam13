@@ -78,6 +78,22 @@ switch (my_state)
 		else
 			sprite_index = spr_player_scream_l;
 		break;
+	 
+	case objectState.slamming_start:
+		image_index = 0;
+		if (facing == 1)
+			sprite_index = spr_player_slam_r;
+		else
+			sprite_index = spr_player_slam_l;
+		break;
+		
+	case objectState.slamming_during:
+		image_index = 1;
+		if (facing == 1)
+			sprite_index = spr_player_slam_r;
+		else
+			sprite_index = spr_player_slam_l;
+		break;
 		
 	case objectState.flaunt:
 		sprite_index = spr_player_dance;

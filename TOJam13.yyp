@@ -381,6 +381,25 @@
             }
         },
         {
+            "Key": "7f7d06fc-4f40-4e9b-95c6-be94de7b4bf5",
+            "Value": {
+                "id": "2c85e621-5715-4ee8-b5dd-d62889d2649e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_cash\/spr_cash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "2a6b9877-2daa-457d-86b4-6f4c3e632ec1",

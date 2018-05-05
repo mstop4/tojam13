@@ -24,6 +24,7 @@ enum objectState
 	pose,
 	dance,
 	taunt,
+	stunned,
 	
 	grabbed_start,
 	grabbed_during,

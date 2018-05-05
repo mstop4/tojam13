@@ -76,7 +76,9 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        
+    ],
     "parentObjectId": "a569a8f7-e24d-4956-bdc7-511c9e7016be",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -102,7 +104,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "4",
+            "value": "3",
             "varName": "my_speed",
             "varType": 0
         },
@@ -116,7 +118,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-4",
+            "value": "-6",
             "varName": "my_jump_speed",
             "varType": 0
         },

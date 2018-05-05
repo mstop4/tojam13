@@ -39,7 +39,7 @@ if (my_state == objectState.idle ||
 					grabbed_id.my_state = objectState.slammed_start;
 					in_air = true;
 					x_speed = 0;
-					y_speed = -3;
+					y_speed = -6;
 					grav = my_grav;
 					alarm[0] = 30;
 				}
@@ -77,4 +77,5 @@ if (my_state == objectState.idle ||
 			type = 0;
 	}
 }
+
 event_inherited();

@@ -43,6 +43,16 @@
             "enumb": 2,
             "eventtype": 3,
             "m_owner": "a569a8f7-e24d-4956-bdc7-511c9e7016be"
+        },
+        {
+            "id": "39ba2f0a-b313-4faa-bb20-2f2824595166",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "a569a8f7-e24d-4956-bdc7-511c9e7016be"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -100,7 +110,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "6",
+            "value": "4",
             "varName": "scream_shake",
             "varType": 1
         },
@@ -142,7 +152,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-30",
+            "value": "-20",
             "varName": "piledrive_speed",
             "varType": 0
         },

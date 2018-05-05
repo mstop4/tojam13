@@ -16,6 +16,6 @@ if (place_meeting(x,y+y_speed,obj_wall))
 	
 else
 {
-	y_speed += grav*4;
+	y_speed += grav*3;
 	y += y_speed;
 }

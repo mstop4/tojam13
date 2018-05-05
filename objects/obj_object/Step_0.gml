@@ -42,4 +42,8 @@ switch (my_state)
 	case objectState.piledriving_start:
 		
 		break;
+		
+	case objectState.screaming_during:
+		object_behaviour_screaming_during();
+		break;
 }

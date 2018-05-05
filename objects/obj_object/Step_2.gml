@@ -10,4 +10,9 @@ switch (my_state)
 		
 		object_behaviour_piledrived_during();
 		break;
+		
+	case objectState.screamed_during:
+	
+		object_behaviour_screamed_during();
+		break;
 }

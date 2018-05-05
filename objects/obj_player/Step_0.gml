@@ -50,10 +50,16 @@ if (my_state == objectState.idle ||
 					grabbed_id.my_state = objectState.piledrived_start;
 				}
 			
-				else
+				else if (_h_input != 0)
 				{
 					my_state = objectState.kicking_start;
 					grabbed_id.my_state = objectState.kicked_start;
+				}
+				
+				else
+				{
+					my_state = objectState.screaming_start;
+					grabbed_id.my_state = objectState.screamed_start;
 				}
 				break;
 				

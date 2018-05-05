@@ -44,5 +44,10 @@ enum objectState
 	piledrived_start,
 	piledrived_during,
 	piledriving_start,
-	piledriving_during
+	piledriving_during,
+	
+	screaming_start,
+	screaming_during,
+	screamed_start,
+	screamed_during
 }

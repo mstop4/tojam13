@@ -1,3 +1,5 @@
+/// @desc slamming end
+
 my_state = objectState.idle;
 
 grabbed_id.my_state = objectState.idle;

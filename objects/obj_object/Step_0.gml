@@ -18,6 +18,11 @@ switch (my_state)
 		object_behaviour_kicked_start();
 		break;
 		
+	case objectState.screamed_start:
+	
+		object_behaviour_screamed_start();
+		break;
+		
 	case objectState.piledrived_start:
 	
 		object_behaviour_piledrived_start();

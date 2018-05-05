@@ -89,6 +89,20 @@
             "value": "8",
             "varName": "lift_speed",
             "varType": 0
+        },
+        {
+            "id": "964f9f1f-9999-4d7b-8e79-6bde5bbd7ef3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "scream_shake",
+            "varType": 1
         }
     ],
     "solid": false,

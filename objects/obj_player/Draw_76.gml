@@ -1,3 +1,5 @@
+image_speed = 1;
+
 switch (my_state)
 {
 	case objectState.idle:
@@ -16,6 +18,36 @@ switch (my_state)
 			else
 				sprite_index = spr_player_walk_l;
 		}
+		break;
+		
+	case objectState.grabbing_start:
+		if (facing == 1)
+			sprite_index = spr_player_pick_up_r;
+		else
+			sprite_index = spr_player_pick_up_l;
+		break;
+		
+	case objectState.grabbing_during:
+		if (facing == 1)
+			sprite_index = spr_player_pick_up_r;
+		else
+			sprite_index = spr_player_pick_up_l;
+		image_index = 1;
+		image_speed = 0;
+		break;
+		
+	case objectState.kicking_start:
+		if (facing == 1)
+			sprite_index = spr_player_put_down_r;
+		else
+			sprite_index = spr_player_put_down_l;
+		break;	
+		
+	case objectState.kicking_during:
+		if (facing == 1)
+			sprite_index = spr_player_kick_r;
+		else
+			sprite_index = spr_player_kick_l;
 		break;
 		
 	case objectState.flaunt:

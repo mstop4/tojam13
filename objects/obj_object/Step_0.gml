@@ -28,6 +28,11 @@ switch (my_state)
 		object_behaviour_piledrived_start();
 		break;
 		
+	case objectState.trophying_start:
+		
+		object_behaviour_trophying_start();
+		break;
+		
 
 	case objectState.piledriving_during:
 		

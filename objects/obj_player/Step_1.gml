@@ -14,3 +14,5 @@ with (obj_object)
 		}
 	}
 }
+
+part_emitter_region(obj_particles.ps,cash_emit,x+12,x+20,y+12,y+20,ps_shape_ellipse,ps_distr_linear);

@@ -1,19 +1,13 @@
 if (place_meeting(x,y+y_speed,obj_wall))
 {
-	while (true)
-	{
-		if (!place_meeting(x,y+sign(y_speed)*0.1,obj_wall))
-			y += sign(y_speed)*0.1;
-		else
-			break;
-	}
+	y = (y+16) div 32* 32;
 				
-	x_speed = -facing*2;
-	y_speed = -2;
+	x_speed = -facing*slam_speed_x;
+	y_speed = slam_speed_y;
 	my_state = objectState.idle;
 	grabbed_id.my_state = objectState.idle;
-	grabbed_id.x_speed = 3*facing;
-	grabbed_id.y_speed = -3;
+	grabbed_id.x_speed = 6*facing;
+	grabbed_id.y_speed = -6;
 	grabbed_id.in_air = true;
 	grabbed_id.grav = grabbed_id.my_grav;
 	grabbed_id.grabber_id = noone;

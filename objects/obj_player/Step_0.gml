@@ -39,7 +39,7 @@ if (my_state == objectState.idle ||
 					grabbed_id.my_state = objectState.slammed_start;
 					in_air = true;
 					x_speed = 0;
-					y_speed = -6;
+					y_speed = my_jump_speed;
 					grav = my_grav;
 					alarm[0] = 30;
 				}
@@ -68,7 +68,7 @@ if (my_state == objectState.idle ||
 		}
 	}
 	
-	else if (obj_IM.button_pressed[my_player_number,action.dance])
+	/*else if (obj_IM.button_pressed[my_player_number,action.dance])
 	{
 		my_state = objectState.dance;
 		alarm[1] = 120;
@@ -81,6 +81,27 @@ if (my_state == objectState.idle ||
 			type = 3;
 		else 
 			type = 0;
+	}*/
+	
+	else if (obj_IM.button_pressed[my_player_number,action.taunt])
+	{
+		if (_v_input == 1)
+		{
+			my_state = objectState.trophying_start;
+			y_speed = piledrive_speed;
+			x_speed = 0;
+			in_air = true;
+			grav = my_grav;
+		}
+		else if (_v_input == -1)
+			type = 2;
+		else if (_h_input != 0)
+			type = 3;
+		else 
+		{
+			my_state = objectState.taunt;
+			alarm[3] = 1;
+		}
 	}
 }
 

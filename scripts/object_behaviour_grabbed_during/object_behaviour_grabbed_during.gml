@@ -1,2 +1,2 @@
 x = grabber_id.x;
-y = grabber_id.y-32;
+y = grabber_id.y-64;

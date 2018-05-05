@@ -77,6 +77,25 @@
             }
         },
         {
+            "Key": "075fd8bd-cfac-427a-b3c7-ea123d3e3e05",
+            "Value": {
+                "id": "569789b1-dafe-4fff-8cce-710a79b023ee",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_particles\/obj_particles.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "07bd274f-fb04-4bbc-83f8-f681ed54074b",
             "Value": {
                 "id": "edb2fb46-debc-4fe4-86b1-8aa54ac9d715",
@@ -172,6 +191,25 @@
             }
         },
         {
+            "Key": "2c692900-8ea6-4560-ae9d-677e45013b39",
+            "Value": {
+                "id": "4b5d86d9-e326-4c72-a2e3-0f99d6a8a51f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_trophy\/obj_trophy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2cd183d4-9e46-41f0-8252-67f9bc4361b1",
             "Value": {
                 "id": "90e618a7-c55a-4648-9530-f52a63fd0fc6",
@@ -245,6 +283,25 @@
                 ],
                 "resourcePath": "objects\/obj_player\/obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "505975e0-4f30-4348-9b13-95343b9db8d4",
+            "Value": {
+                "id": "c93ecae5-b5bc-433b-893f-df5e6e8ab2ed",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_trophy\/spr_trophy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -761,6 +818,25 @@
             }
         },
         {
+            "Key": "dd24f253-9aad-45ac-89d8-a31f6aaba909",
+            "Value": {
+                "id": "9f1c3ba2-d565-49c5-82c4-20a247978e87",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/object_behaviour_trophying_start\/object_behaviour_trophying_start.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
             "Value": {
                 "id": "d43df718-dd9e-4b74-a4c9-7e9e2cea24df",
@@ -923,6 +999,7 @@
         "3d974abf-debf-4c64-bc4e-5e370643d284",
         "cef959d9-69ef-4fbb-bc1b-ff696c08f314",
         "7eda9c50-735f-434a-953b-8a2ed9c0be6b",
+        "dd24f253-9aad-45ac-89d8-a31f6aaba909",
         "85556826-ba02-4073-92da-0de4f27d5bd1"
     ],
     "tutorial": ""

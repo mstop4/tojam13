@@ -1,12 +1,6 @@
 if (place_meeting(x+x_speed,y,obj_wall))
 {
-	while (true)
-	{
-		if (!place_meeting(x+sign(x_speed)*0.1,y,obj_wall))
-			x += sign(x_speed)*0.1;
-		else
-			break;
-	}
+	x = (x+16) div 32 * 32;
 			
 	x_speed *= -0.5;
 }

@@ -37,6 +37,10 @@ if (my_state == objectState.idle ||
 				{
 					my_state = objectState.slamming_start;
 					grabbed_id.my_state = objectState.slammed_start;
+					in_air = true;
+					x_speed = 0;
+					y_speed = -3;
+					grav = my_grav;
 					alarm[0] = 30;
 				}
 				

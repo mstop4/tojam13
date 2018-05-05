@@ -3,6 +3,7 @@ switch (my_state)
 	case objectState.idle:
 	case objectState.grabbing_start:
 	case objectState.grabbing_during:
+	case objectState.slamming_start:
 	
 		object_behaviour_idle();
 		break;
@@ -38,7 +39,6 @@ switch (my_state)
 		object_behaviour_piledriving_during();
 		break;
 		
-	case objectState.slamming_start:
 	case objectState.piledriving_start:
 		
 		break;

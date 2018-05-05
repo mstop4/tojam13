@@ -1,13 +1,13 @@
-var _h_input = obj_IM.button_held[my_player_number,action.right] - obj_IM.button_held[my_player_number,action.left];
-var _v_input = obj_IM.button_held[my_player_number,action.down] - obj_IM.button_held[my_player_number,action.up];
+h_input = obj_IM.button_held[my_player_number,action.right] - obj_IM.button_held[my_player_number,action.left];
+v_input = obj_IM.button_held[my_player_number,action.down] - obj_IM.button_held[my_player_number,action.up];
 
 if (my_state == objectState.idle ||
 	my_state == objectState.grabbing_during)
 {
-	if (_h_input != 0)
-		facing = _h_input;
+	if (h_input != 0)
+		facing = h_input;
 		
-	x_speed = my_speed * _h_input;
+	x_speed = my_speed * h_input;
 
 	if (!in_air && obj_IM.button_pressed[my_player_number,action.jump])
 	{
@@ -33,7 +33,7 @@ if (my_state == objectState.idle ||
 		
 			case objectState.grabbing_during:
 			
-				if (_v_input == 1)
+				if (v_input == 1)
 				{
 					my_state = objectState.slamming_start;
 					grabbed_id.my_state = objectState.slammed_start;
@@ -44,13 +44,13 @@ if (my_state == objectState.idle ||
 					alarm[0] = 30;
 				}
 				
-				else if (_v_input == -1)
+				else if (v_input == -1)
 				{
 					my_state = objectState.piledriving_start;
 					grabbed_id.my_state = objectState.piledrived_start;
 				}
 			
-				else if (_h_input != 0)
+				else if (h_input != 0)
 				{
 					my_state = objectState.kicking_start;
 					grabbed_id.my_state = objectState.kicked_start;
@@ -73,11 +73,11 @@ if (my_state == objectState.idle ||
 		my_state = objectState.dance;
 		alarm[1] = 120;
 		
-		if (_v_input == 1)
+		if (v_input == 1)
 			type = 1;
-		else if (_v_input == -1)
+		else if (v_input == -1)
 			type = 2;
-		else if (_h_input != 0)
+		else if (h_input != 0)
 			type = 3;
 		else 
 			type = 0;
@@ -85,7 +85,7 @@ if (my_state == objectState.idle ||
 	
 	else if (obj_IM.button_pressed[my_player_number,action.taunt])
 	{
-		if (_v_input == 1)
+		if (v_input == 1)
 		{
 			my_state = objectState.trophying_start;
 			y_speed = piledrive_speed;
@@ -93,9 +93,9 @@ if (my_state == objectState.idle ||
 			in_air = true;
 			grav = my_grav;
 		}
-		else if (_v_input == -1)
+		else if (v_input == -1)
 			type = 2;
-		else if (_h_input != 0)
+		else if (h_input != 0)
 			type = 3;
 		else 
 		{

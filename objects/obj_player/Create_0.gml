@@ -1,5 +1,8 @@
 event_inherited();
 
+h_input = 0;
+v_input = 0;
+
 closest_obj = noone;
 grabbed_id = noone;
 type = 0;

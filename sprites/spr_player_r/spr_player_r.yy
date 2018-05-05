@@ -2,7 +2,7 @@
     "id": "075dc44b-e63b-4112-b055-e6a8ce303abe",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_player",
+    "name": "spr_player_r",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -10,30 +10,30 @@
     "bbox_left": 0,
     "bbox_right": 63,
     "bbox_top": 0,
-    "bboxmode": 0,
+    "bboxmode": 1,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "4ba54ec0-720c-40a9-a0bc-da44c23503c1",
+            "id": "52994fd6-ac92-4edc-8059-daef14e5542d",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "075dc44b-e63b-4112-b055-e6a8ce303abe",
             "compositeImage": {
-                "id": "45330277-bdb9-48e3-850a-7e5ece1f790e",
+                "id": "4345ff6a-f4bd-4c38-97bc-36b2fff58769",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "4ba54ec0-720c-40a9-a0bc-da44c23503c1",
+                "FrameId": "52994fd6-ac92-4edc-8059-daef14e5542d",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "ea266ee0-f2c8-40e7-881a-1f60af5f1be2",
+                    "id": "a5be8480-96b8-4350-9f93-c2a03d4abe62",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "4ba54ec0-720c-40a9-a0bc-da44c23503c1",
-                    "LayerId": "546d8698-e31b-4cf7-9f12-c7aee036f065"
+                    "FrameId": "52994fd6-ac92-4edc-8059-daef14e5542d",
+                    "LayerId": "0e1a4849-c6d9-4a48-87a9-9adbcf87cbcb"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 64,
     "layers": [
         {
-            "id": "546d8698-e31b-4cf7-9f12-c7aee036f065",
+            "id": "0e1a4849-c6d9-4a48-87a9-9adbcf87cbcb",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "075dc44b-e63b-4112-b055-e6a8ce303abe",

@@ -36,8 +36,8 @@ for (var j=0; j<2; j++)
 	else
 	{
 		// stick
-		var _h_input = gamepad_axis_value(control_slot[j],gp_axislh);
-		var _v_input = gamepad_axis_value(control_slot[j],gp_axislv);
+		var h_input = gamepad_axis_value(control_slot[j],gp_axislh);
+		var v_input = gamepad_axis_value(control_slot[j],gp_axislv);
 		var _old_button_state;
 	
 		//up
@@ -45,7 +45,7 @@ for (var j=0; j<2; j++)
 		button_released[j,action.up] = false;
 	
 		_old_button_state = button_held[j,action.up];
-		button_held[j,action.up] = _v_input <= -stick_threshold;
+		button_held[j,action.up] = v_input <= -stick_threshold;
 	
 		if (!_old_button_state && button_held[j,action.up])
 			button_pressed[j,action.up] = true;
@@ -57,7 +57,7 @@ for (var j=0; j<2; j++)
 		button_released[j,action.down] = false;
 	
 		_old_button_state = button_held[j,action.down];
-		button_held[j,action.down] = _v_input >= stick_threshold;
+		button_held[j,action.down] = v_input >= stick_threshold;
 	
 		if (!_old_button_state && button_held[j,action.down])
 			button_pressed[j,action.down] = true;
@@ -69,7 +69,7 @@ for (var j=0; j<2; j++)
 		button_released[j,action.left] = false;
 	
 		_old_button_state = button_held[j,action.left];
-		button_held[j,action.left] = _h_input <= -stick_threshold;
+		button_held[j,action.left] = h_input <= -stick_threshold;
 	
 		if (!_old_button_state && button_held[j,action.left])
 			button_pressed[j,action.left] = true;
@@ -81,7 +81,7 @@ for (var j=0; j<2; j++)
 		button_released[j,action.right] = false;
 	
 		_old_button_state = button_held[j,action.right];
-		button_held[j,action.right] = _h_input >= stick_threshold;
+		button_held[j,action.right] = h_input >= stick_threshold;
 	
 		if (!_old_button_state && button_held[j,action.right])
 			button_pressed[j,action.right] = true;

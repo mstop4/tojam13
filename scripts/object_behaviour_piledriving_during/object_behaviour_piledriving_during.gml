@@ -12,6 +12,13 @@ if (place_meeting(x,y+y_speed,obj_wall))
 	grabbed_id.grav = grabbed_id.my_grav;
 	grabbed_id.grabber_id = noone;
 	grabbed_id = noone;
+	
+	obj_RPS.shake_screen = true;
+	obj_RPS.alarm[5] = 30;
+	obj_RPS.max_duration = 30;
+	obj_RPS.max_shake = 10;
+	
+	audio_play_sound(snd_boom,50,false);
 }
 	
 else

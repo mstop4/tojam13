@@ -17,4 +17,5 @@ with (p2)
 my_state = rpsState.preparing;
 audio_play_sound(mus_normal_loop,100,true);
 audio_stop_sound(mus_win_loop);
+obj_goat.pulse = false;
 alarm[4] = 30;

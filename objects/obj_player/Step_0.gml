@@ -1,4 +1,4 @@
-if (my_state == objectState.calm)
+if (my_state == objectState.calm && obj_RPS.my_state == rpsState.waiting)
 {
 	var _xx, _yy;
 	if (my_player_number == 0)
@@ -18,22 +18,22 @@ if (my_state == objectState.calm)
 		if (obj_IM.button_pressed[my_player_number,action.interact])
 		{
 			my_sign = instance_create_layer(_xx,_yy,"Instances",obj_rps_sign);	
-			my_sign.image_index = 0;
-			my_rps_move = rps_move.rock;
+			my_sign.image_index = 1;
+			my_rps_move = rps_move.paper;
 		}
 		
 		else if (obj_IM.button_pressed[my_player_number,action.jump])
 		{
 			my_sign = instance_create_layer(_xx,_yy,"Instances",obj_rps_sign);
-			my_sign.image_index = 1;
-			my_rps_move = rps_move.paper;
+			my_sign.image_index = 2;
+			my_rps_move = rps_move.scissors;
 		}
 		
 		else if (obj_IM.button_pressed[my_player_number,action.taunt])
 		{
 			my_sign = instance_create_layer(_xx,_yy,"Instances",obj_rps_sign);
-			my_sign.image_index = 2;
-			my_rps_move = rps_move.scissors;
+			my_sign.image_index = 0;
+			my_rps_move = rps_move.rock;
 		}
 	}
 }
@@ -58,7 +58,7 @@ else
 				y_speed = my_jump_speed;
 			}
 	
-			if (obj_IM.button_pressed[my_player_number,action.taunt])
+			/*if (obj_IM.button_pressed[my_player_number,action.taunt])
 			{
 				if (v_input == 1)
 				{
@@ -77,7 +77,7 @@ else
 					my_state = objectState.taunt;
 					alarm[3] = 1;
 				}
-			}
+			}*/
 		}
 
 		if (obj_IM.button_pressed[my_player_number,action.interact])

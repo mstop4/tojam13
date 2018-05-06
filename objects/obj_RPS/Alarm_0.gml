@@ -59,5 +59,13 @@ with (p2)
 	audio_play_sound(snd_grunt,50,false);
 	audio_play_sound(snd_explode,50,false);
 	audio_play_sound(mus_win_loop,100,true);
+	
+	obj_goat.pulse = true;
+	obj_goat.t = 0;
+	
+	shake_screen = true;
+	max_shake = 5;
+	alarm[5] = 60;
+	max_duration = 60;
 
 alarm[2] = 60;

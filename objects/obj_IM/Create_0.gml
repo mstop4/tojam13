@@ -1,4 +1,4 @@
-control_slot[0] = -1;
+control_slot[0] = 0;
 mouse_device_id[0] = 0;
 
 kbm_key[0, action.up] = ord("W");
@@ -21,8 +21,8 @@ kbm_device[0, action.taunt] = device.keyboard;
 
 gp_key[0, action.interact] = gp_face3;
 gp_key[0, action.jump] = gp_face1;
-gp_key[0, action.dance] = gp_face2;
-gp_key[0, action.taunt] = gp_face4;
+gp_key[0, action.dance] = gp_face4;
+gp_key[0, action.taunt] = gp_face2;
 
 control_slot[1] = -1;
 mouse_device_id[1] = 1;
@@ -47,8 +47,8 @@ kbm_device[1, action.taunt] = device.keyboard;
 
 gp_key[1, action.interact] = gp_face3;
 gp_key[1, action.jump] = gp_face1;
-gp_key[1, action.dance] = gp_face2;
-gp_key[1, action.taunt] = gp_face4;
+gp_key[1, action.dance] = gp_face4;
+gp_key[1, action.taunt] = gp_face2;
 
 for (var j=0; j<2; j++)
 {

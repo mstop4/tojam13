@@ -14,6 +14,11 @@ if (grabber_id != noone)
 		grabber_id.grabbed_id = noone;
 		grabber_id = noone;
 		audio_play_sound(snd_hit,50,false);
+		
+		obj_RPS.shake_screen = true;
+		obj_RPS.alarm[5] = 30;
+		obj_RPS.max_duration = 30;
+		obj_RPS.max_shake = 5;
 	}
 		
 	else

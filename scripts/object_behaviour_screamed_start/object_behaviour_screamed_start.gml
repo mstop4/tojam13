@@ -11,6 +11,11 @@ if (grabber_id != noone)
 		grabber_id.my_state = objectState.screaming_during;
 		grabber_id.alarm[2] = 60;
 		audio_play_sound(snd_scream,50,false);
+		
+		obj_RPS.shake_screen = true;
+		obj_RPS.alarm[5] = 60;
+		obj_RPS.max_duration = 60;
+		obj_RPS.max_shake = 3;
 	}
 		
 	else

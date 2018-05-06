@@ -267,6 +267,25 @@
             }
         },
         {
+            "Key": "1e55a755-7401-44ff-a9ec-dde0cf56e7b0",
+            "Value": {
+                "id": "1661a3ae-c30d-42d6-955e-1b807e1302df",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_goat\/spr_goat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26d02b54-1e87-4d68-b9af-6b7ff7c8f272",
             "Value": {
                 "id": "1ddc616a-b435-42c3-96f1-707a578311ad",
@@ -438,6 +457,25 @@
             }
         },
         {
+            "Key": "44a13824-beac-4fee-8b68-27595ef39861",
+            "Value": {
+                "id": "d1632a72-73b6-444e-a994-ebae94393067",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_goat\/obj_goat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4c9e3e7b-efda-44dd-929e-7f7b8522e83f",
             "Value": {
                 "id": "b9a7f9ca-8e4f-482f-8ab5-9d0985abf35f",
@@ -530,6 +568,25 @@
                 ],
                 "resourcePath": "views\/596f80bd-a1ed-4ea0-97fe-19fdac2e81ac.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c641529-38d8-4c4a-ba6c-8b3aefeaafc4",
+            "Value": {
+                "id": "4cd9e542-7324-471f-831d-8767a8cd2751",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_boom\/snd_boom.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -913,6 +970,25 @@
             }
         },
         {
+            "Key": "9ebe612f-4ac4-477f-83d7-80e383385e5b",
+            "Value": {
+                "id": "71001af6-766d-4a46-9bd2-e0336a098502",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_whoosh\/snd_whoosh.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "bdebaf06-8b1b-4a4d-b160-0c02acf27712",
@@ -1081,6 +1157,25 @@
                 ],
                 "resourcePath": "sprites\/spr_player2_walk\/spr_player2_walk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bca331b3-8741-4e8a-a00a-197e85be178e",
+            "Value": {
+                "id": "4f3ed483-0cec-4150-a516-903c2d693084",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/fnt_winner\/fnt_winner.yy",
+                "resourceType": "GMFont"
             }
         },
         {

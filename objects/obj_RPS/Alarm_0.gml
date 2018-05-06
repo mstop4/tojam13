@@ -18,6 +18,7 @@ if ((p1.my_rps_move == rps_move.rock && p2.my_rps_move == rps_move.scissors) ||
 	(p1.my_rps_move == rps_move.paper && p2.my_rps_move == rps_move.rock) ||
 	(p1.my_rps_move == rps_move.scissors && p2.my_rps_move == rps_move.paper))
 {
+	winner = 0;
 	_p1_win = 1;
 	_p2_win = -1;
 }
@@ -26,6 +27,7 @@ else if ((p2.my_rps_move == rps_move.rock && p1.my_rps_move == rps_move.scissors
 	(p2.my_rps_move == rps_move.paper && p1.my_rps_move == rps_move.rock) ||
 	(p2.my_rps_move == rps_move.scissors && p1.my_rps_move == rps_move.paper))
 {
+	winner = 1;
 	_p1_win = -1;
 	_p2_win = 1;
 }

@@ -67,8 +67,10 @@ enum objectState
 
 enum rpsState
 {
+	preparing,
 	waiting,
 	pending,
 	dueling,
-	showboating
+	showboating,
+	outro
 }

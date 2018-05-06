@@ -13,7 +13,7 @@
         "79c16018-06d4-46dd-a3d3-579a2ea79b74",
         "722c78e1-811c-41a5-9979-de681ac9051e",
         "eaef34d4-9a22-4c7d-9734-a22400879dca",
-        "09c287f0-0249-4acc-8e28-c2bf38eddf1f"
+        "e86e315d-f8ff-44b4-89a2-ef4973287018"
     ],
     "filterType": "GMSprite",
     "folderName": "Player 1",

@@ -18,6 +18,14 @@ enum action
 	max_actions
 }
 
+enum rps_move
+{
+	none,
+	rock,
+	paper,
+	scissors
+}
+
 enum objectState
 {
 	idle,
@@ -25,7 +33,7 @@ enum objectState
 	dance,
 	taunt,
 	flaunt,
-	stunned,
+	inactive,
 	calm,
 	
 	trophying_start,
@@ -55,4 +63,11 @@ enum objectState
 	screaming_during,
 	screamed_start,
 	screamed_during
+}
+
+enum rpsState
+{
+	waiting,
+	pending,
+	showboating
 }

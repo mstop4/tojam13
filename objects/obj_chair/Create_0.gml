@@ -5,4 +5,3 @@
 event_inherited();
 
 img_angle = 0;
-

@@ -2,19 +2,57 @@ event_inherited();
 
 switch (my_state)
 {
-	case objectState.idle:
-		if (h_input != 0)
-			sprite_index = spr_player_walk;
+	case objectState.calm:
+		if (my_player_number == 0)
+			sprite_index = spr_player_calm;
 		else
-			sprite_index = spr_player_idle;
+			sprite_index = spr_player2_calm;
+		break;
+	
+	case objectState.idle:
+		if (is_winner == 1)
+		{
+			if (h_input != 0)
+			{
+				if (my_player_number == 0)
+					sprite_index = spr_player_walk;
+				else
+					sprite_index = spr_player2_walk;
+			}
+			else
+			{
+				if (my_player_number == 0)
+					sprite_index = spr_player_idle;
+				else
+					sprite_index = spr_player2_idle;
+			}
+		}
+		
+		else if (is_winner == -1)
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_sad;
+			else
+				sprite_index = spr_player2_sad;
+		}
 		break;
 		
 	case objectState.grabbing_start:
-		sprite_index = spr_player_pick_up;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_pick_up;
+			else
+				sprite_index = spr_player2_pick_up;
+		}
 		break;
 		
 	case objectState.grabbing_during:
-		sprite_index = spr_player_pick_up;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_pick_up;
+			else
+				sprite_index = spr_player2_pick_up;
+		}
 		image_index = 1;
 		image_speed = 0;
 		break;
@@ -22,11 +60,21 @@ switch (my_state)
 	case objectState.kicking_start:
 	case objectState.piledriving_start:
 	case objectState.screaming_start:
-		sprite_index = spr_player_put_down;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_put_down;
+			else
+				sprite_index = spr_player2_put_down;
+		}
 		break;	
 		
 	case objectState.kicking_during:
-		sprite_index = spr_player_kick;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_kick;
+			else
+				sprite_index = spr_player2_kick;
+		}
 		break;
 		
 	case objectState.piledriving_during:
@@ -35,28 +83,53 @@ switch (my_state)
 		break;
 		
 	case objectState.screaming_during:
-		sprite_index = spr_player_scream;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_scream;
+			else
+				sprite_index = spr_player2_scream;
+		}
 		break;
 	 
 	case objectState.slamming_start:
 		image_index = 0;
-		sprite_index = spr_player_slam;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_slam;
+			else
+				sprite_index = spr_player2_slam;
+		}
 		break;
 		
 	case objectState.slamming_during:
 		image_index = 1;
-		sprite_index = spr_player_slam;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_slam;
+			else
+				sprite_index = spr_player2_slam;
+		}
 		break;
 		
 	case objectState.flaunt:
-		sprite_index = spr_player_dance3;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_dance3;
+			else
+				sprite_index = spr_player_dance3;
+		}
 		break;
 		
 	case objectState.trophying_start:
 	case objectState.trophying_during:
-		sprite_index = spr_player_dance2;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_dance2;
+			else
+				sprite_index = spr_player_dance2;
+		}
 		break;
 		
 	default:
-		sprite_index = spr_player_idle;
+		sprite_index = spr_player_sad;
 }

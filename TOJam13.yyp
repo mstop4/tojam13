@@ -1633,6 +1633,25 @@
                 "resourcePath": "views\/f613eb8d-28bd-4fde-b10d-8662a0ea00b0.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fbf201af-745d-4d15-b49c-a6433a2857c3",
+            "Value": {
+                "id": "428038b8-34a1-4a23-ac54-3809bb1ca06d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/mus_normal_loop\/mus_normal_loop.yy",
+                "resourceType": "GMSound"
+            }
         }
     ],
     "script_order": [

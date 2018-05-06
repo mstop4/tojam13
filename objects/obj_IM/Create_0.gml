@@ -24,7 +24,7 @@ gp_key[0, action.jump] = gp_face1;
 gp_key[0, action.dance] = gp_face4;
 gp_key[0, action.taunt] = gp_face2;
 
-control_slot[1] = -1;
+control_slot[1] = 1;
 mouse_device_id[1] = 1;
 
 kbm_key[1, action.up] = vk_up;

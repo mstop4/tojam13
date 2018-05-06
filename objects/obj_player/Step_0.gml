@@ -52,11 +52,11 @@ else
 		{
 			x_speed = my_speed * h_input;
 
-			if (!in_air && obj_IM.button_pressed[my_player_number,action.jump])
+			/*if (!in_air && obj_IM.button_pressed[my_player_number,action.jump])
 			{
 				y--;
 				y_speed = my_jump_speed;
-			}
+			}*/
 	
 			/*if (obj_IM.button_pressed[my_player_number,action.taunt])
 			{
@@ -80,7 +80,9 @@ else
 			}*/
 		}
 
-		if (obj_IM.button_pressed[my_player_number,action.interact])
+		if (obj_IM.button_pressed[my_player_number,action.interact] ||
+			obj_IM.button_pressed[my_player_number,action.jump] || 
+			obj_IM.button_pressed[my_player_number,action.taunt] )
 		{
 			switch (my_state)
 			{

@@ -10,6 +10,7 @@ if (grabber_id != noone)
 		my_state = objectState.screamed_during;
 		grabber_id.my_state = objectState.screaming_during;
 		grabber_id.alarm[2] = 60;
+		audio_play_sound(snd_scream,50,false);
 	}
 		
 	else

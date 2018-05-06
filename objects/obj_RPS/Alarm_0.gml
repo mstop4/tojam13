@@ -55,4 +55,9 @@ with (p2)
 	is_winner = _p2_win;
 }
 
+
+	audio_play_sound(snd_grunt,50,false);
+	audio_play_sound(snd_explode,50,false);
+	audio_play_sound(mus_win_loop,100,true);
+
 alarm[2] = 60;

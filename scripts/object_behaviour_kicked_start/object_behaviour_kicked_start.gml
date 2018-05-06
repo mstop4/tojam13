@@ -13,6 +13,7 @@ if (grabber_id != noone)
 		y_speed = kick_speed_y;
 		grabber_id.grabbed_id = noone;
 		grabber_id = noone;
+		audio_play_sound(snd_hit,50,false);
 	}
 		
 	else

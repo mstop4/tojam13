@@ -96,6 +96,25 @@
             }
         },
         {
+            "Key": "07975de8-d393-46eb-9042-314931a545f0",
+            "Value": {
+                "id": "bcea9057-254c-4ffc-a325-b2a4315cd6b2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_explode\/snd_explode.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "07bd274f-fb04-4bbc-83f8-f681ed54074b",
             "Value": {
                 "id": "edb2fb46-debc-4fe4-86b1-8aa54ac9d715",
@@ -150,6 +169,25 @@
                 ],
                 "resourcePath": "sprites\/sprite25\/sprite25.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0ac96871-58e9-4527-9b38-ac7dba7f1dee",
+            "Value": {
+                "id": "62522e4c-ede6-44bb-9fcb-afcb07576924",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_grunt\/snd_grunt.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -264,6 +302,25 @@
                 ],
                 "resourcePath": "sprites\/spr_player2_scream\/spr_player2_scream.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2b2bff4b-9c3c-42da-876c-711cd3af6f90",
+            "Value": {
+                "id": "eda05cf8-6d00-4e21-baa3-764c296ef798",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_scream\/snd_scream.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1065,6 +1122,25 @@
             }
         },
         {
+            "Key": "c3b1abd4-a4c8-4f61-8eae-953ed9d9c9ef",
+            "Value": {
+                "id": "ead6bb08-b4d8-48c2-bd54-9279b336a6ae",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_hit\/snd_hit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c8c027ce-fa74-42a6-8cae-6b5227f9a095",
             "Value": {
                 "id": "783d59f7-fb9c-4527-a8eb-a2db9bce47bd",
@@ -1309,6 +1385,25 @@
                 ],
                 "resourcePath": "views\/e0834ae7-3b63-4a58-8436-f7ac7ad87f5d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e2dce1fe-b026-43c7-9b25-d4c91f19f85a",
+            "Value": {
+                "id": "44a436e2-ab88-4f16-866a-c6d57a7e9dc4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/mus_win_loop\/mus_win_loop.yy",
+                "resourceType": "GMSound"
             }
         },
         {

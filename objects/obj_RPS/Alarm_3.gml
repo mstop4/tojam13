@@ -15,4 +15,5 @@ with (p2)
 	event_user(0);
 	
 my_state = rpsState.preparing;
+audio_stop_sound(mus_win_loop);
 alarm[4] = 30;

@@ -3,7 +3,10 @@ event_inherited();
 switch (my_state)
 {
 	case objectState.idle:
-		sprite_index = spr_player_idle;
+		if (h_input != 0)
+			sprite_index = spr_player_walk;
+		else
+			sprite_index = spr_player_idle;
 		break;
 		
 	case objectState.grabbing_start:

@@ -172,6 +172,25 @@
             }
         },
         {
+            "Key": "1924d804-c776-4b4d-a4df-e98e6c678b59",
+            "Value": {
+                "id": "0cd2e23d-9d30-421a-8440-ab1ac50e6748",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_object_small\/obj_object_small.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b70240d-d3ad-48af-927b-543a9a9895b3",
             "Value": {
                 "id": "f567d531-2518-429f-979c-352a26b5b739",
@@ -224,7 +243,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_player_mask\/spr_player_mask.yy",
+                "resourcePath": "sprites\/spr_object_small\/spr_object_small.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -414,7 +433,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_player_dance4\/spr_player_dance4.yy",
+                "resourcePath": "sprites\/spr_chair\/spr_chair.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -738,6 +757,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/obj_object\/obj_object.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a7dd4f5e-944e-419e-bd24-5a625e901731",
+            "Value": {
+                "id": "7b9c57a6-7e7d-4120-a566-49270195ee00",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_chair\/obj_chair.yy",
                 "resourceType": "GMObject"
             }
         },

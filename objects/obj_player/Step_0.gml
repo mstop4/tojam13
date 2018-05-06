@@ -3,13 +3,13 @@ if (my_state == objectState.calm)
 	var _xx, _yy;
 	if (my_player_number == 0)
 	{
-		_xx = 200;
+		_xx = x;
 		_yy = 100;
 	}
 	
 	else
 	{
-		_xx = 400;
+		_xx = x;
 		_yy = 100;
 	}
 	

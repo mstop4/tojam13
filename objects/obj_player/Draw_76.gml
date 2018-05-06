@@ -78,7 +78,12 @@ switch (my_state)
 		break;
 		
 	case objectState.piledriving_during:
-		sprite_index = spr_player_piledrive;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_piledrive;
+			else
+				sprite_index = spr_player2_piledrive;
+		}
 		image_index = y_speed <= 0 ? 0 : 1;
 		break;
 		
@@ -114,9 +119,9 @@ switch (my_state)
 	case objectState.flaunt:
 		{
 			if (my_player_number == 0)
-				sprite_index = spr_player_dance3;
+				sprite_index = spr_player_flaunt;
 			else
-				sprite_index = spr_player_dance3;
+				sprite_index = spr_player2_flaunt;
 		}
 		break;
 		

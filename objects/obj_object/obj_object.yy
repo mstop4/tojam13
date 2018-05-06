@@ -249,6 +249,20 @@
             "value": "-64",
             "varName": "hold_v_yoffset",
             "varType": 0
+        },
+        {
+            "id": "52da5313-689a-43f4-81e6-6b05174c2c56",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "facing",
+            "varType": 0
         }
     ],
     "solid": false,

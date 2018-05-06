@@ -44,6 +44,7 @@ switch (my_state)
 		break;
 		
 	case objectState.screaming_during:
+	case objectState.flaunt:
 		object_behaviour_screaming_during();
 		break;
 }

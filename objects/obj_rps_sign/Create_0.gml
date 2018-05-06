@@ -6,3 +6,5 @@ event_inherited();
 
 my_state = objectState.inactive;
 visible = false;
+
+img_angle = 0;

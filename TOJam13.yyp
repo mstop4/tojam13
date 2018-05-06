@@ -780,6 +780,25 @@
             }
         },
         {
+            "Key": "8e223790-a9ca-4d0a-a83d-2b69fb687706",
+            "Value": {
+                "id": "28fc3c93-149e-488b-94e5-5c9ce7d50cc8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_player2_flaunt\/spr_player2_flaunt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8f9ca63c-08a3-4eae-b144-09c2b3ae1cd1",
             "Value": {
                 "id": "82a69ef7-8cf0-4f54-ad58-29bc9e3b3a2d",
@@ -1231,7 +1250,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_player_dance3\/spr_player_dance3.yy",
+                "resourcePath": "sprites\/spr_player_flaunt\/spr_player_flaunt.yy",
                 "resourceType": "GMSprite"
             }
         },

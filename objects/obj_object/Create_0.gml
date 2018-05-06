@@ -1,4 +1,4 @@
-facing = 1;
+//facing = 1;
 v_facing = 1;
 
 x_speed = 0;

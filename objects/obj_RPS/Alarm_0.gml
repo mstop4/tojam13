@@ -1,5 +1,17 @@
 my_state = rpsState.showboating;
 
+with (p1.my_sign)
+{
+	x_speed = irandom_range(-3,3);
+	my_state = objectState.idle;
+}
+
+with (p2.my_sign)
+{
+	x_speed = irandom_range(-3,3);
+	my_state = objectState.idle;
+}
+		
 var _p1_win, _p2_win;
 
 if ((p1.my_rps_move == rps_move.rock && p2.my_rps_move == rps_move.scissors) ||
@@ -20,10 +32,8 @@ else if ((p2.my_rps_move == rps_move.rock && p1.my_rps_move == rps_move.scissors
 
 else
 {
-	with (obj_rps_sign)
-		my_state = objectState.idle;
-		
 	my_state = rpsState.waiting;
+	instance_destroy(obj_rps_sign);
 	p1.my_rps_move = rps_move.none;
 	p2.my_rps_move = rps_move.none;
 	exit;
@@ -31,16 +41,16 @@ else
 
 with (p1)
 {
-	my_state = objectState.idle;
-	my_sign.my_state = objectState.idle;
+	my_state = _p1_win == 1 ? objectState.flaunt : objectState.idle;
+	alarm[1] = _p1_win == 1 ? 60 : -1;
 	is_winner = _p1_win;
-	my_sign = noone;
 }
 
 with (p2)
 {
-	my_state = objectState.idle;
-	my_sign.my_state = objectState.idle;
+	my_state = _p2_win == 1 ? objectState.flaunt : objectState.idle;
+	alarm[1] = _p2_win == 1 ? 60 : -1; 
 	is_winner = _p2_win;
-	my_sign = noone;
 }
+
+alarm[2] = 60;

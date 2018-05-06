@@ -231,6 +231,20 @@
             "value": "5",
             "varName": "max_trophy_burst",
             "varType": 1
+        },
+        {
+            "id": "c55670d1-a855-4a57-ac49-9a60ea1968c9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "is_winner",
+            "varType": 3
         }
     ],
     "solid": false,

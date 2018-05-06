@@ -1,4 +1,4 @@
-image_speed = 1;
+event_inherited();
 
 switch (my_state)
 {

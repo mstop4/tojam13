@@ -26,6 +26,7 @@ enum objectState
 	taunt,
 	flaunt,
 	stunned,
+	calm,
 	
 	trophying_start,
 	trophying_during,

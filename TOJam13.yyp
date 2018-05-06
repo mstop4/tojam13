@@ -1236,6 +1236,25 @@
             }
         },
         {
+            "Key": "eaef34d4-9a22-4c7d-9734-a22400879dca",
+            "Value": {
+                "id": "18a65337-a33e-435c-9706-bf3f875803bf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_player_calm\/spr_player_calm.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ee3dbfb6-cb21-4e50-a948-6a7442011f94",
             "Value": {
                 "id": "72209070-832f-4ea1-94ac-eb38330f9d98",

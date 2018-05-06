@@ -3,35 +3,15 @@ event_inherited();
 switch (my_state)
 {
 	case objectState.idle:
-		if (facing == 1)
-		{
-			if (h_input == 0)
-				sprite_index = spr_player_r;
-			else
-				sprite_index = spr_player_walk_r;
-		}
-		
-		else
-		{
-			if (h_input == 0)
-				sprite_index = spr_player_l;
-			else
-				sprite_index = spr_player_walk_l;
-		}
+		sprite_index = spr_player_idle;
 		break;
 		
 	case objectState.grabbing_start:
-		if (facing == 1)
-			sprite_index = spr_player_pick_up_r;
-		else
-			sprite_index = spr_player_pick_up_l;
+		sprite_index = spr_player_pick_up;
 		break;
 		
 	case objectState.grabbing_during:
-		if (facing == 1)
-			sprite_index = spr_player_pick_up_r;
-		else
-			sprite_index = spr_player_pick_up_l;
+		sprite_index = spr_player_pick_up;
 		image_index = 1;
 		image_speed = 0;
 		break;
@@ -39,64 +19,34 @@ switch (my_state)
 	case objectState.kicking_start:
 	case objectState.piledriving_start:
 	case objectState.screaming_start:
-		if (facing == 1)
-			sprite_index = spr_player_put_down_r;
-		else
-			sprite_index = spr_player_put_down_l;
+		sprite_index = spr_player_put_down;
 		break;	
 		
 	case objectState.kicking_during:
-		if (facing == 1)
-			sprite_index = spr_player_kick_r;
-		else
-			sprite_index = spr_player_kick_l;
+		sprite_index = spr_player_kick;
 		break;
 		
 	case objectState.piledriving_during:
-		if (facing == 1)
-		{
-			sprite_index = spr_player_piledrive_r;
-			if (y_speed <= 0)
-				image_index = 0;
-			else
-				image_index = 1;
-		}
-		
-		else
-		{
-			sprite_index = spr_player_piledrive_l;
-			if (y_speed <= 0)
-				image_index = 0;
-			else
-				image_index = 1;
-		}
+		sprite_index = spr_player_piledrive;
+		image_index = y_speed <= 0 ? 0 : 1;
 		break;
 		
 	case objectState.screaming_during:
-		if (facing == 1)
-			sprite_index = spr_player_scream_r;
-		else
-			sprite_index = spr_player_scream_l;
+		sprite_index = spr_player_scream;
 		break;
 	 
 	case objectState.slamming_start:
 		image_index = 0;
-		if (facing == 1)
-			sprite_index = spr_player_slam_r;
-		else
-			sprite_index = spr_player_slam_l;
+		sprite_index = spr_player_slam;
 		break;
 		
 	case objectState.slamming_during:
 		image_index = 1;
-		if (facing == 1)
-			sprite_index = spr_player_slam_r;
-		else
-			sprite_index = spr_player_slam_l;
+		sprite_index = spr_player_slam;
 		break;
 		
 	case objectState.flaunt:
-		sprite_index = spr_player_dance;
+		sprite_index = spr_player_dance3;
 		break;
 		
 	case objectState.trophying_start:
@@ -105,5 +55,5 @@ switch (my_state)
 		break;
 		
 	default:
-		sprite_index = spr_player_r;
+		sprite_index = spr_player_idle;
 }

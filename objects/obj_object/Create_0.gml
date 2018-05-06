@@ -1,3 +1,6 @@
+facing = 1;
+v_facing = 1;
+
 x_speed = 0;
 y_speed = 0;
 

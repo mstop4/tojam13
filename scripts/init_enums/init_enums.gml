@@ -69,5 +69,6 @@ enum rpsState
 {
 	waiting,
 	pending,
+	dueling,
 	showboating
 }

@@ -131,5 +131,10 @@ switch (my_state)
 		break;
 		
 	default:
-		sprite_index = spr_player_sad;
+		{
+			if (my_player_number == 0)
+				sprite_index = spr_player_sad;
+			else
+				sprite_index = spr_player2_sad;
+		}
 }

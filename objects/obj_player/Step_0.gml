@@ -1,24 +1,37 @@
 if (my_state == objectState.calm)
 {
+	var _xx, _yy;
+	if (my_player_number == 0)
+	{
+		_xx = 200;
+		_yy = 100;
+	}
+	
+	else
+	{
+		_xx = 400;
+		_yy = 100;
+	}
+	
 	if (my_rps_move == rps_move.none)
 	{
 		if (obj_IM.button_pressed[my_player_number,action.interact])
 		{
-			my_sign = instance_create_layer(200,100,"Instances",obj_rps_sign);
+			my_sign = instance_create_layer(_xx,_yy,"Instances",obj_rps_sign);	
 			my_sign.image_index = 0;
 			my_rps_move = rps_move.rock;
 		}
 		
 		else if (obj_IM.button_pressed[my_player_number,action.jump])
 		{
-			my_sign = instance_create_layer(200,100,"Instances",obj_rps_sign);
+			my_sign = instance_create_layer(_xx,_yy,"Instances",obj_rps_sign);
 			my_sign.image_index = 1;
 			my_rps_move = rps_move.paper;
 		}
 		
 		else if (obj_IM.button_pressed[my_player_number,action.taunt])
 		{
-			my_sign = instance_create_layer(200,100,"Instances",obj_rps_sign);
+			my_sign = instance_create_layer(_xx,_yy,"Instances",obj_rps_sign);
 			my_sign.image_index = 2;
 			my_rps_move = rps_move.scissors;
 		}
